@@ -1,0 +1,41 @@
+@use 'helpers' as *;
+
+:root {
+  --color-primery: #B982FF;
+  --color-accent: rgb(185, 130, 255);
+
+  --gradient: linear-gradient(135deg, #18C8FF, #933FFE);
+
+  --color-gray-bg: #0B0B0F;
+  --color-gray-100: #212529;
+  --color-gray-80: #495057;
+  --color-gray-60: #6E7584;
+  --color-gray-50: #ADB5BD;
+  --color-gray-40: #CED4DA;
+  --color-gray-30: #E9ECEF;
+  --color-gray-20: #f1f3f5;
+  --color-gray-10: #F8F9FA;
+  --color-gray-0: #FFFFFF;
+
+  --color-error: #FC3425;
+  --color-info: #00B6FF;
+  --color-warning: #F99109;
+  --color-success: #43D81E;
+
+  --font-family-base: 'Inter', sans-serif;
+
+  --font-size-body-text: #{rem(16)};
+  --font-size-body-text-small: #{rem(14)};
+  --font-size-button-text: #{rem(16)};
+  --font-size-small-text: #{rem(12)};
+
+
+  --container-width: #{rem(1440)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  @include tablet {
+    --container-width: #{rem(744)};
+  }
+}
