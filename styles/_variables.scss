@@ -3,8 +3,8 @@
 :root {
   --color-primery: #B982FF;
   --color-accent: rgb(185, 130, 255);
-
-  --gradient: linear-gradient(135deg, #18C8FF, #933FFE);
+  
+  --gradient: linear-gradient(195deg, #18c8ff 0%, #933ffe 100%);
 
   --color-gray-bg: #0B0B0F;
   --color-gray-100: #212529;
@@ -30,12 +30,12 @@
   --font-size-small-text: #{rem(12)};
 
 
-  --container-width: #{rem(1440)};
+  --container-width: #{rem(1180)};
   --container-padding-x: #{rem(16)};
 
   --transition-duration: 0.2s;
 
-  @include tablet {
-    --container-width: #{rem(744)};
+  @include mobile {
+    --container-width: #{rem(648)};
   }
 }
