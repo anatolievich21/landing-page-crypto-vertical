@@ -14,7 +14,7 @@
         <div class="header__body">
             <div class="header__body-inner container">
                 <a
-                    class="header_logo logo"
+                    class="header__logo logo"
                     href="/"
                     aria-label="Home"
                     title="Home"
@@ -27,31 +27,31 @@
                     />
                 </a>
                 <div class="header__overlay" data-js-header-overlay>
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >About</a>
+                    <nav class="menu menu--header">
+                        <ul class="menu__list menu__list--header">
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >About</a>
                             </li>
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >Service</a>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >Service</a>
                             </li>
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >Token Sale</a>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >Token Sale</a>
                             </li>
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >FAQ’s</a>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >FAQ’s</a>
                             </li>
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >Team</a>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >Team</a>
                             </li>
-                            <li class="header__menu_item">
-                                <a class="header__menu-link" href="/" >Bloq</a>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--header" href="/" >Bloq</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header__button-wrapper">
-                    <a class="header__button button button--header" href="#" >
+                    <a class="header__button button" href="#" >
                         Get in Touch
                     </a>
                     <button
@@ -66,9 +66,92 @@
                         <span class="burger-button__line"></span>
                     </button>
                 </div>
-
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__inner container">
+                <div class="hero__body">
+                    <div class="hero__heading">
+                        <div class="hero__row">
+                            <h1 class="hero__title" id="hero-title">Own Your Crypto</h1>
+                        </div>
+                        <div class="hero__row">
+                            <h1 class="hero__title">Adventure</h1>
+                            <p class="hero__subtitle">Lörem ipsum treras.</p>
+                        </div>
+                    </div>
+                    <div class="hero__description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                    </div>
+                    <a class="hero__button button" href="#">Get Started</a>
+                </div>
+                <div class="hero__img">
+                    <img src="images/cards.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__body">
+                <div class="footer__info">
+                    <a
+                            class="footer__logo logo"
+                            href="/"
+                            aria-label="Home"
+                            title="Home"
+                    >
+                        <img
+                                class="logo__image"
+                                src="./images/logo.svg"
+                                alt=""
+                                width="184" height="48"
+                        />
+                    </a>
+                    <p class="footer__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.                    </p>
+                    <div class="footer__contact">
+                        <input type="email" class="footer__contact-input" placeholder="Email Address" />
+                        <button class="footer__contact-button">
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.90909 2L13 7M13 7L7.90909 12M13 7L1 7" stroke="#495057" stroke-width="2" stroke-linecap="square" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <nav class="menu--footer menu">
+                    <ul class="menu__list--footer menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">Service</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">Token Sale</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">FAQ’s</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">Team</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link--footer menu__link" href="/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__extra">
+                <p class="footer__copyright">© 2021 GPD Holdings, LLC FinCEN MSB</p>
+                <p class="footer__legal">Privacy Policy and Terms of Service</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

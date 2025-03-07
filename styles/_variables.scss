@@ -3,7 +3,7 @@
 :root {
   --color-primery: #B982FF;
   --color-accent: rgb(185, 130, 255);
-  
+
   --gradient: linear-gradient(195deg, #18c8ff 0%, #933ffe 100%);
 
   --color-gray-bg: #0B0B0F;
@@ -30,12 +30,8 @@
   --font-size-small-text: #{rem(12)};
 
 
-  --container-width: #{rem(1180)};
+  --container-width: #{fluid(1180, 344)};
   --container-padding-x: #{rem(16)};
 
   --transition-duration: 0.2s;
-
-  @include mobile {
-    --container-width: #{rem(648)};
-  }
 }

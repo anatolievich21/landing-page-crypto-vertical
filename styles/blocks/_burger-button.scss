@@ -10,6 +10,7 @@
   color: var(--color-gray-0);
   background-color: transparent;
   border: none;
+  z-index: 1;
 
   @include hover {
     color: var(--color-accent);

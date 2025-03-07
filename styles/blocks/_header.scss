@@ -12,7 +12,7 @@
     }
 
     @include mobile-s {
-      padding-block: rem(32);
+      padding: rem(32) rem(16);
     }
   }
 
@@ -40,6 +40,8 @@
       background-position: bottom;
       background-repeat: no-repeat;
 
+      z-index: 1;
+
       &:not(.is-active) {
         @include hide;
 
@@ -48,34 +50,9 @@
     }
   }
 
-  &__menu {
-    @include mobile {
-      overflow-y: auto;
-    }
-
-    &-list {
-      display: flex;
-      align-items: center;
-      column-gap: rem(32);
-
-      @include tablet {
-        column-gap: rem(18);
-      }
-
-      @include mobile {
-        flex-direction: column;
-        row-gap: 2rem;
-      }
-    }
-
-    &-link {
-      color: var(--color-gray-0);
-      font-size: var(--font-size-body-text-small);
-      line-height: 1;
-    }
-  }
-
   &__button {
+    padding: rem(13) rem(32);
+
     @include mobile-s {
       display: none;
     }
@@ -88,14 +65,14 @@
       display: flex;
       align-items: center;
       column-gap: rem(80);
-
-
     }
   }
 }
 
-.button {
+.menu {
   &--header {
-    padding: rem(13) rem(32);
+    @include mobile {
+      overflow-y: auto;
+    }
   }
 }

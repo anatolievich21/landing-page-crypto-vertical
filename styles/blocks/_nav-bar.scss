@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: rem(32);
+
+    @include tablet {
+      column-gap: rem(18);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+  }
+
+  &__link {
+    color: var(--color-gray-0);
+    font-size: var(--font-size-body-text-small);
+    line-height: 1;
+  }
+}

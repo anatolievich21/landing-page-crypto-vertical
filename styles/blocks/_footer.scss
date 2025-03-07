@@ -1,0 +1,128 @@
+@use '../helpers' as *;
+
+.footer {
+  &__inner {
+    padding-block: fluid(136, 78);
+  }
+
+  &__body {
+    display: flex;
+    padding-block: rem(24);
+
+    @include mobile-s {
+      flex-direction: column;
+      align-items: center;
+      gap: rem(24);
+    }
+  }
+
+  &__info{
+    max-width: rem(399);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include mobile-s {
+      align-items: center;
+      gap: rem(24);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    background-color: #f4f5f6;
+    border-radius: rem(10);
+    padding: rem(16) rem(20);
+    width: rem(304);
+
+    &-input {
+      border: none;
+      background: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: var(--font-size-body-text);
+      color: var(--color-gray-60);
+    }
+
+    &-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__description {
+    @include mobile-s {
+      padding-inline: rem(16);
+      text-align: center;
+    }
+  }
+
+  &__extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--color-gray-20);
+
+    @include mobile {
+      gap: 3rem;
+    }
+
+    @include custom {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__copyright {
+    font-size: var(--font-size-small-text);
+  }
+
+  &__legal {
+    font-size: var(--font-size-body-text-small);
+  }
+}
+
+.menu {
+  &--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__list {
+    &--footer {
+      display: flex;
+      margin: 0;
+      padding: 0 0 5rem 0;
+      gap: fluid(24, 8);
+
+      @include tablet {
+        padding: 0 0 3rem 0;
+      }
+
+      @include mobile {
+        gap: rem(24);
+        align-items: start;
+      }
+
+      @include mobile-s {
+        align-items: center;
+      }
+    }
+  }
+
+  &__link{
+    &--footer{
+      color: var(--color-gray-40);
+    }
+  }
+}
