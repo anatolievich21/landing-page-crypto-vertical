@@ -3,11 +3,16 @@
 .footer {
   &__inner {
     padding-block: fluid(136, 78);
-  }
+      }
 
   &__body {
     display: flex;
     padding-block: rem(24);
+    gap: rem(16);
+
+    @include mobile {
+      padding-block: rem(55);
+    }
 
     @include mobile-s {
       flex-direction: column;
@@ -22,6 +27,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include mobile {
+      max-width: rem(380);
+      width: max-content;
+    }
 
     @include mobile-s {
       align-items: center;
@@ -94,7 +104,7 @@
   &--footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -102,12 +112,7 @@
     &--footer {
       display: flex;
       margin: 0;
-      padding: 0 0 5rem 0;
-      gap: fluid(24, 8);
-
-      @include tablet {
-        padding: 0 0 3rem 0;
-      }
+      column-gap: fluid(32, 4);
 
       @include mobile {
         gap: rem(24);

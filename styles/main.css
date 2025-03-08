@@ -366,7 +366,13 @@ button[aria-label]::before {
 }
 
 .logo {
-  max-width: clamp(7.4375rem, 6.0070422535rem + 6.103286385vw, 11.5rem);
+  width: 11.5rem;
+  height: auto;
+}
+@media (width <= 30.06125rem) {
+  .logo {
+    max-width: clamp(7.4375rem, 6.0070422535rem + 6.103286385vw, 11.5rem);
+  }
 }
 
 .menu__list {
@@ -620,6 +626,12 @@ button[aria-label]::before {
 .footer__body {
   display: flex;
   padding-block: 1.5rem;
+  gap: 1rem;
+}
+@media (width <= 47.99875rem) {
+  .footer__body {
+    padding-block: 3.4375rem;
+  }
 }
 @media (width <= 30.06125rem) {
   .footer__body {
@@ -634,6 +646,12 @@ button[aria-label]::before {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+@media (width <= 47.99875rem) {
+  .footer__info {
+    max-width: 23.75rem;
+    width: max-content;
+  }
 }
 @media (width <= 30.06125rem) {
   .footer__info {
@@ -700,19 +718,13 @@ button[aria-label]::before {
 .menu--footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 .menu__list--footer {
   display: flex;
   margin: 0;
-  padding: 0 0 5rem 0;
-  gap: clamp(0.5rem, 0.1478873239rem + 1.5023474178vw, 1.5rem);
-}
-@media (width <= 63.99875rem) {
-  .menu__list--footer {
-    padding: 0 0 3rem 0;
-  }
+  column-gap: clamp(0.25rem, -0.3661971831rem + 2.6291079812vw, 2rem);
 }
 @media (width <= 47.99875rem) {
   .menu__list--footer {
